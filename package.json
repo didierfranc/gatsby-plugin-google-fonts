@@ -2,7 +2,7 @@
   "name": "gatsby-plugin-google-fonts",
   "version": "0.0.2",
   "description": "Bring Google Fonts to Gatsby",
-  "main": "index.js",
+  "main": "gatsby-ssr.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
