@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/didierfranc/gatsby-plugin-google-fonts.git"
   },
-  "keywords": ["gatsby", "react", "google", "fonts"],
+  "keywords": ["gatsby", "gastby-plugin", "react", "google", "fonts"],
   "author": "Didier Franc <dev@didierfranc.com>",
   "license": "MIT",
   "bugs": {
