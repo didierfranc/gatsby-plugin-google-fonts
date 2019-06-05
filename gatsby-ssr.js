@@ -20,18 +20,20 @@ var format = function format(string) {
 }
 
 var getFonts = function getFonts(options) {
-  var fonts = options.fonts
+  return options.fonts
     .map(format)
     .join('|')
     .replace(/ /g, '+')
+}
 
-  return options.display ? fonts + '&display=' + options.display : fonts
+var getDisplay = function getDisplay(options) {
+  return options.display ? '&display=' + options.display : ''
 }
 
 exports.onRenderBody = function(_ref, options) {
   var setHeadComponents = _ref.setHeadComponents
 
-  var link = 'https://fonts.googleapis.com/css?family=' + getFonts(options)
+  var link = 'https://fonts.googleapis.com/css?family=' + getFonts(options) + getDisplay(options)
   setHeadComponents([
     _react2.default.createElement('link', {
       key: 'fonts',
