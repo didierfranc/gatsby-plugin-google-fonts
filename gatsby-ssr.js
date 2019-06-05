@@ -20,10 +20,12 @@ var format = function format(string) {
 }
 
 var getFonts = function getFonts(options) {
-  return options.fonts
+  var fonts = options.fonts
     .map(format)
     .join('|')
     .replace(/ /g, '+')
+
+  return options.display ? fonts + '&display=' + options.display : fonts
 }
 
 exports.onRenderBody = function(_ref, options) {
