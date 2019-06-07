@@ -26,7 +26,7 @@ var getFonts = function getFonts(options) {
     .replace(/ /g, '+')
 }
 
-var getDisplay = function getDisplay(options) {
+function getDisplay(options) {
   return options.display ? '&display=' + options.display : ''
 }
 
