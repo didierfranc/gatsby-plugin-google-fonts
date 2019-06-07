@@ -26,10 +26,14 @@ var getFonts = function getFonts(options) {
     .replace(/ /g, '+')
 }
 
+function getDisplay(options) {
+  return options.display ? '&display=' + options.display : ''
+}
+
 exports.onRenderBody = function(_ref, options) {
   var setHeadComponents = _ref.setHeadComponents
 
-  var link = 'https://fonts.googleapis.com/css?family=' + getFonts(options)
+  var link = 'https://fonts.googleapis.com/css?family=' + getFonts(options) + getDisplay(options)
   setHeadComponents([
     _react2.default.createElement('link', {
       key: 'fonts',
