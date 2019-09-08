@@ -39,13 +39,13 @@ exports.onRenderBody = function(_ref, options) {
       key: 'google-fonts-preconnect',
       rel: 'preconnect',
       href: 'https://fonts.gstatic.com/',
-      crossorigin: 'anonymous'
+      crossOrigin: 'anonymous'
     }),
     _react2.default.createElement('link', {
       key: 'fonts',
       href: link,
       rel: 'stylesheet',
-      crossorigin: 'anonymous'
+      crossOrigin: 'anonymous'
     })
   ])
 }
