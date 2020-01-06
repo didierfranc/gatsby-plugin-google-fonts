@@ -34,4 +34,3 @@ module.exports = {
 ## How to find great ideas ?
 
 - https://fonts.google.com
-- http://fontpair.co/
