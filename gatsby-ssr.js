@@ -8,7 +8,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj }
 }
 
-var format = function format(string) {
+function format(string) {
   return string
     .split(' ')
     .map(function(s) {
@@ -19,7 +19,7 @@ var format = function format(string) {
     .join(' ')
 }
 
-var getFonts = function getFonts(options) {
+function getFonts(options) {
   return options.fonts
     .map(format)
     .join('|')
