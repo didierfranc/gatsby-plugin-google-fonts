@@ -36,9 +36,16 @@ exports.onRenderBody = function(_ref, options) {
   var link = 'https://fonts.googleapis.com/css?family=' + getFonts(options) + getDisplay(options)
   setHeadComponents([
     _react2.default.createElement('link', {
+      key: 'google-fonts-preconnect',
+      rel: 'preconnect',
+      href: 'https://fonts.gstatic.com/',
+      crossOrigin: 'anonymous'
+    }),
+    _react2.default.createElement('link', {
       key: 'fonts',
       href: link,
-      rel: 'stylesheet'
+      rel: 'stylesheet',
+      crossOrigin: 'anonymous'
     })
   ])
 }
